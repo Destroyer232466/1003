@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const JWT_SECRET = "1003-secret-key-very-secure";
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Ensure uploads directory exists
 const uploadsDir = path.join(__dirname, "uploads");
